@@ -1,0 +1,91 @@
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Sikirevci</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: darkgreen;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.hero {
+    background: lightgreen;
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>NK Sikirevci</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Početna</a></li>
+            <li><a href="#about">O klubu</a></li>
+            <li><a href="#players">Igrači</a></li>
+            <li><a href="#matches">Utakmice</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Dobrodošli!</h2>
+    <p>Službena stranica NK Sikirevci</p>
+</section>
+
+<section id="about">
+    <h2>O klubu</h2>
+    <p>NK Sikirevci je nogometni klub iz mjesta Sikirevci. Klub ima dugu tradiciju i važan je dio lokalne zajednice.</p>
+</section>
+
+<section id="players">
+    <h2>Igrači</h2>
+    <ul id="player-list"></ul>
+</section>
+
+<section id="matches">
+    <h2>Rezultati</h2>
+    <button onclick="showResult()">Prikaži zadnji rezultat</button>
+    <p id="result"></p>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>Email: nk.sikirevci@email.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 NK Sikirevci</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
