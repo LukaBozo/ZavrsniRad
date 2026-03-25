@@ -1,0 +1,66 @@
+body {
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: linear-gradient(to right, #8B0000, #ff0000);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: red;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

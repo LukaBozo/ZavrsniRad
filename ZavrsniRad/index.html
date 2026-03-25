@@ -4,88 +4,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NK Sikirevci</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-header {
-    background: darkgreen;
-    color: white;
-    padding: 15px;
-}
-
-nav ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-}
-
-.hero {
-    background: lightgreen;
-    padding: 50px;
-    text-align: center;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-    </style>
 </head>
-
 <body>
 
 <header>
-    <h1>NK Sikirevci</h1>
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <span>NK Sikirevci</span>
+    </div>
+
     <nav>
-        <ul>
-            <li><a href="#">Početna</a></li>
-            <li><a href="#about">O klubu</a></li>
-            <li><a href="#players">Igrači</a></li>
-            <li><a href="#matches">Utakmice</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="igraci.html">Igrači</a></li>
+            <li><a href="#">Utakmice</a></li>
+            <li><a href="#">Galerija</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Dobrodošli!</h2>
-    <p>Službena stranica NK Sikirevci</p>
+    <h1>NK SIKIREVCI</h1>
+    <p>Ponos našeg mjesta od 1948.</p>
+    <div class="buttons">
+        <a href="igraci.html" class="btn">Upoznaj igrače</a>
+        <a href="#" class="btn-outline">Raspored utakmica</a>
+    </div>
 </section>
 
-<section id="about">
-    <h2>O klubu</h2>
-    <p>NK Sikirevci je nogometni klub iz mjesta Sikirevci. Klub ima dugu tradiciju i važan je dio lokalne zajednice.</p>
-</section>
-
-<section id="players">
-    <h2>Igrači</h2>
-    <ul id="player-list"></ul>
-</section>
-
-<section id="matches">
-    <h2>Rezultati</h2>
-    <button onclick="showResult()">Prikaži zadnji rezultat</button>
-    <p id="result"></p>
-</section>
-
-<section id="contact">
-    <h2>Kontakt</h2>
-    <p>Email: nk.sikirevci@email.com</p>
+<section class="stats">
+    <div class="card">
+        <h2>3</h2>
+        <p>Osvojena kupa</p>
+    </div>
+    <div class="card">
+        <h2>120+</h2>
+        <p>Igrača</p>
+    </div>
+    <div class="card">
+        <h2>1948</h2>
+        <p>Osnovan</p>
+    </div>
 </section>
 
 <footer>
     <p>&copy; 2026 NK Sikirevci</p>
 </footer>
 
+<link rel="stylesheet" href="style.css">
 <script src="index.js"></script>
+
 </body>
 </html>
