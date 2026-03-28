@@ -1,16 +1,8 @@
-const players = [
-    "Ivan Horvat - Napadač",
-    "Marko Marić - Vezni",
-    "Luka Kovač - Obrana"
-];
+const toggleButton = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-nav');
 
-const playerList = document.getElementById("player-list");
-players.forEach(p => {
-    const li = document.createElement("li");
-    li.textContent = p;
-    playerList.appendChild(li);
-});
-
-function showResult() {
-    document.getElementById("result").textContent = "NK Sikirevci 2 - 1 Rival";
+if (toggleButton && nav) {
+  toggleButton.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
 }
