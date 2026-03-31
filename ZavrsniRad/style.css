@@ -838,3 +838,66 @@ a {
 .match-card:hover::after {
   opacity: 1;
 }
+
+
+/* Igraci */
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.player-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: translateY(-6px);
+}
+
+/* SLIKA */
+.player-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* INFO */
+.player-info {
+  padding: 15px;
+}
+
+.player-position {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.player-info h3 {
+  margin-bottom: 8px;
+}
+
+.player-info p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+}
