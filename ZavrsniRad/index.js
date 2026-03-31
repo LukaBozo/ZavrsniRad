@@ -17,3 +17,6 @@ if (slides.length > 0) {
     slides[currentSlide].classList.add('active');
   }, 10000);
 }
+
+
+/* O nama */
