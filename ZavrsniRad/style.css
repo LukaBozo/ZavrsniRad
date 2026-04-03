@@ -1108,6 +1108,7 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
 }
 
 .featured-player-image img {
@@ -1217,4 +1218,8 @@ a {
   .featured-derby-image {
     height: 220px;
   }
+}
+
+.featured-player-image{
+  height: 360px;
 }
