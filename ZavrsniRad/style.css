@@ -793,7 +793,7 @@ a {
 
 
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .players-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1165,7 +1165,7 @@ a {
   display: block;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .featured-grid {
     grid-template-columns: 1fr;

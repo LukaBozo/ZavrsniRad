@@ -19,4 +19,12 @@ if (slides.length > 0) {
 }
 
 
-/* O nama */
+
+
+
+
+
+
+
+
+
